@@ -1,86 +1,94 @@
- hi clear
+hi clear
 syntax reset
 
 let g:colors_name="termscheme"
 
+if &background == "dark"
+    let s:back = 0
+    let s:norm = 15
+else
+    let s:back = 15
+    let s:norm = 0
+endif
+
 " Normal
 " TODO Optionally transparent
-hi Normal               cterm=none      ctermfg=White     ctermbg=none
-hi NonText              cterm=none      ctermfg=Red       ctermbg=none
+hi Normal               cterm=none      ctermfg=15    ctermbg=none
+hi NonText              cterm=none      ctermfg=12    ctermbg=none
 
-hi Visual               cterm=none      ctermfg=White     ctermbg=Gray
-hi Search               cterm=none      ctermfg=White     ctermbg=Yellow
-hi Folded               cterm=none      ctermfg=DarkGrey  ctermbg=none
-hi Pmenu                cterm=none      ctermfg=White     ctermbg=Gray
-hi PmenuSel             cterm=none      ctermfg=Yellow    ctermbg=Black
+hi Visual               cterm=none      ctermfg=15    ctermbg=7
+hi Search               cterm=none      ctermfg=15    ctermbg=14
+hi Folded               cterm=none      ctermfg=8     ctermbg=none
+hi Pmenu                cterm=none      ctermfg=15    ctermbg=7
+hi PmenuSel             cterm=none      ctermfg=14    ctermbg=0
 
 " Ui
-hi Cursor               cterm=none      ctermfg=Black     ctermbg=White
-hi CursorIM             cterm=none      ctermfg=Black     ctermbg=White
-hi ColorColumn          cterm=none      ctermfg=none      ctermbg=DarkGray
-hi CursorLine           cterm=none      ctermfg=none      ctermbg=DarkGray
-hi CursorColumn         cterm=none      ctermfg=none      ctermbg=DarkGray
-hi SignColumn           cterm=none      ctermfg=none      ctermbg=none
-hi LineNr               cterm=none      ctermfg=DarkGray  ctermbg=none
-hi CursorLineNr         cterm=Bold      ctermfg=Yellow    ctermbg=none
-hi VertSplit            cterm=none      ctermfg=White     ctermbg=none
+hi Cursor               cterm=none      ctermfg=0     ctermbg=15
+hi CursorIM             cterm=none      ctermfg=0     ctermbg=15
+hi ColorColumn          cterm=none      ctermfg=none  ctermbg=8
+hi CursorLine           cterm=none      ctermfg=none  ctermbg=8
+hi CursorColumn         cterm=none      ctermfg=none  ctermbg=8
+hi SignColumn           cterm=none      ctermfg=none  ctermbg=none
+hi LineNr               cterm=none      ctermfg=8     ctermbg=none
+hi CursorLineNr         cterm=Bold      ctermfg=14    ctermbg=none
+hi VertSplit            cterm=none      ctermfg=15     ctermbg=none
 " hi StatusLine           cterm=none    ctermfg=none      ctermbg=none
 " hi StatusLineNC         cterm=none    ctermfg=none      ctermbg=none
 " hi StatusLineTerm       cterm=none    ctermfg=none      ctermbg=none
 " hi StatusLineTermNC     cterm=none    ctermfg=none      ctermbg=none
 
 " Text
-hi MatchParen           cterm=none      ctermfg=White     ctermbg=Cyan
+hi MatchParen           cterm=none      ctermfg=15    ctermbg=11
 
 " Diff
-hi DiffAdd              cterm=none      ctermfg=none      ctermbg=Blue
-hi DiffChange           cterm=none      ctermfg=none      ctermbg=Yellow
-hi DiffDelete           cterm=none      ctermfg=none      ctermbg=Red
-hi DiffText             cterm=underline ctermfg=none      ctermbg=Yellow
+hi DiffAdd              cterm=none      ctermfg=none  ctermbg=9
+hi DiffChange           cterm=none      ctermfg=none  ctermbg=14
+hi DiffDelete           cterm=none      ctermfg=none  ctermbg=12
+hi DiffText             cterm=underline ctermfg=none  ctermbg=14
 
 " Coding
-hi Comment              cterm=none      ctermfg=Gray      ctermbg=none
+hi Comment              cterm=none      ctermfg=7     ctermbg=none
 
-hi Constant             cterm=none      ctermfg=Magenta   ctermbg=none
-hi String               cterm=none      ctermfg=Cyan      ctermbg=none
-hi Character            cterm=none      ctermfg=Cyan      ctermbg=none
-hi Number               cterm=none      ctermfg=Magenta   ctermbg=none
-hi Boolean              cterm=none      ctermfg=Magenta   ctermbg=none
-hi Float                cterm=none      ctermfg=Magenta   ctermbg=none
+hi Constant             cterm=none      ctermfg=13    ctermbg=none
+hi String               cterm=none      ctermfg=11    ctermbg=none
+hi Character            cterm=none      ctermfg=11    ctermbg=none
+hi Number               cterm=none      ctermfg=13    ctermbg=none
+hi Boolean              cterm=none      ctermfg=13    ctermbg=none
+hi Float                cterm=none      ctermfg=13    ctermbg=none
 
-hi Identifier           cterm=none      ctermfg=Green     ctermbg=none
-hi Function             cterm=none      ctermfg=Green     ctermbg=none
+hi Identifier           cterm=none      ctermfg=10    ctermbg=none
+hi Function             cterm=none      ctermfg=10    ctermbg=none
 
-hi Statement            cterm=none      ctermfg=Red       ctermbg=none
-hi Conditional          cterm=none      ctermfg=Red       ctermbg=none
-hi Repeat               cterm=none      ctermfg=Red       ctermbg=none
-hi Label                cterm=none      ctermfg=Red       ctermbg=none
-hi Operator             cterm=none      ctermfg=Red       ctermbg=none
-hi Keyword              cterm=none      ctermfg=Blue      ctermbg=none
-hi Exception            cterm=none      ctermfg=Red       ctermbg=none
+hi Statement            cterm=none      ctermfg=12    ctermbg=none
+hi Conditional          cterm=none      ctermfg=12    ctermbg=none
+hi Repeat               cterm=none      ctermfg=12    ctermbg=none
+hi Label                cterm=none      ctermfg=12    ctermbg=none
+hi Operator             cterm=none      ctermfg=12    ctermbg=none
+hi Keyword              cterm=none      ctermfg=9     ctermbg=none
+hi Exception            cterm=none      ctermfg=12    ctermbg=none
 
-hi PreProc              cterm=none      ctermfg=Green     ctermbg=none
-hi Include              cterm=none      ctermfg=Blue      ctermbg=none
-hi Define               cterm=none      ctermfg=Blue      ctermbg=none
-hi Macro                cterm=none      ctermfg=Green     ctermbg=none
-hi PreCondit            cterm=none      ctermfg=Green     ctermbg=none
+hi PreProc              cterm=none      ctermfg=10    ctermbg=none
+hi Include              cterm=none      ctermfg=9     ctermbg=none
+hi Define               cterm=none      ctermfg=9     ctermbg=none
+hi Macro                cterm=none      ctermfg=10    ctermbg=none
+hi PreCondit            cterm=none      ctermfg=10    ctermbg=none
 
-hi Type                 cterm=none      ctermfg=Blue      ctermbg=none
-hi StorageClass         cterm=none      ctermfg=Red       ctermbg=none
-hi Structure            cterm=none      ctermfg=Red       ctermbg=none
-hi Typedef              cterm=none      ctermfg=Red       ctermbg=none
+hi Type                 cterm=none      ctermfg=9     ctermbg=none
+hi StorageClass         cterm=none      ctermfg=12    ctermbg=none
+hi Structure            cterm=none      ctermfg=12    ctermbg=none
+hi Typedef              cterm=none      ctermfg=12    ctermbg=none
 
-hi Special              cterm=none      ctermfg=Blue      ctermbg=none
-hi SpecialChar          cterm=none      ctermfg=Red       ctermbg=none
-hi Tag                  cterm=none      ctermfg=Red       ctermbg=none
-hi Delimiter            cterm=none      ctermfg=Red       ctermbg=none
-hi SpecialComment       cterm=none      ctermfg=Blue      ctermbg=none
-hi Debug                cterm=none      ctermfg=Blue      ctermbg=none
+hi Special              cterm=none      ctermfg=9     ctermbg=none
+hi SpecialChar          cterm=none      ctermfg=12    ctermbg=none
+hi Tag                  cterm=none      ctermfg=12    ctermbg=none
+hi Delimiter            cterm=none      ctermfg=12    ctermbg=none
+hi SpecialComment       cterm=none      ctermfg=9     ctermbg=none
+hi Debug                cterm=none      ctermfg=9     ctermbg=none
 
-hi Underlined           cterm=underline ctermfg=Green     ctermbg=none
-hi Ignore               cterm=none      ctermfg=White     ctermbg=none
-hi Error                cterm=none      ctermfg=none      ctermbg=Red
-hi Todo                 cterm=bold      ctermfg=White     ctermbg=none
+hi Underlined           cterm=underline ctermfg=10    ctermbg=none
+hi Ignore               cterm=none      ctermfg=15    ctermbg=none
+hi Error                cterm=none      ctermfg=none  ctermbg=12
+hi Todo                 cterm=bold      ctermfg=15    ctermbg=none
 
 " Whatever
 " hi Conceal              cterm=none    ctermfg=none      ctermbg=none

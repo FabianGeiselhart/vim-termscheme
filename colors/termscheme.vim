@@ -3,16 +3,8 @@ syntax reset
 
 let g:colors_name="termscheme"
 
-if &background == "dark"
-    let s:back = 0
-    let s:norm = 15
-else
-    let s:back = 15
-    let s:norm = 0
-endif
-
 " Normal
-" TODO Optionally transparent
+" TODO Optionally transpanone
 hi Normal               cterm=none      ctermfg=15    ctermbg=none
 hi NonText              cterm=none      ctermfg=12    ctermbg=none
 
@@ -29,9 +21,9 @@ hi ColorColumn          cterm=none      ctermfg=none  ctermbg=8
 hi CursorLine           cterm=none      ctermfg=none  ctermbg=8
 hi CursorColumn         cterm=none      ctermfg=none  ctermbg=8
 hi SignColumn           cterm=none      ctermfg=none  ctermbg=none
-hi LineNr               cterm=none      ctermfg=8     ctermbg=none
+hi LineNr               cterm=Bold      ctermfg=7     ctermbg=none
 hi CursorLineNr         cterm=Bold      ctermfg=14    ctermbg=none
-hi VertSplit            cterm=none      ctermfg=15     ctermbg=none
+hi VertSplit            cterm=none      ctermfg=15    ctermbg=none
 " hi StatusLine           cterm=none    ctermfg=none      ctermbg=none
 " hi StatusLineNC         cterm=none    ctermfg=none      ctermbg=none
 " hi StatusLineTerm       cterm=none    ctermfg=none      ctermbg=none
@@ -48,6 +40,7 @@ hi DiffText             cterm=underline ctermfg=none  ctermbg=14
 
 " Coding
 hi Comment              cterm=none      ctermfg=7     ctermbg=none
+hi Conceal              cterm=none      ctermfg=7     ctermbg=none
 
 hi Constant             cterm=none      ctermfg=13    ctermbg=none
 hi String               cterm=none      ctermfg=11    ctermbg=none
@@ -91,7 +84,6 @@ hi Error                cterm=none      ctermfg=none  ctermbg=12
 hi Todo                 cterm=bold      ctermfg=15    ctermbg=none
 
 " Whatever
-" hi Conceal              cterm=none    ctermfg=none      ctermbg=none
 " hi Directory            cterm=none    ctermfg=none      ctermbg=none
 " hi EndOfBuffer          cterm=none    ctermfg=none      ctermbg=none
 " hi ErrorMsg             cterm=none    ctermfg=none      ctermbg=none

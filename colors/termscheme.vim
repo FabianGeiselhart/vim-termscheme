@@ -10,7 +10,7 @@ hi NonText              cterm=none      ctermfg=12    ctermbg=none
 
 hi Visual               cterm=none      ctermfg=15    ctermbg=7
 hi Search               cterm=none      ctermfg=15    ctermbg=14
-hi Folded               cterm=none      ctermfg=8     ctermbg=none
+hi Folded               cterm=none      ctermfg=7     ctermbg=none
 hi Pmenu                cterm=none      ctermfg=15    ctermbg=7
 hi PmenuSel             cterm=none      ctermfg=14    ctermbg=0
 
@@ -61,8 +61,8 @@ hi Keyword              cterm=none      ctermfg=9     ctermbg=none
 hi Exception            cterm=none      ctermfg=12    ctermbg=none
 
 hi PreProc              cterm=none      ctermfg=10    ctermbg=none
-hi Include              cterm=none      ctermfg=9     ctermbg=none
-hi Define               cterm=none      ctermfg=9     ctermbg=none
+hi Include              cterm=none      ctermfg=10    ctermbg=none
+hi Define               cterm=none      ctermfg=10    ctermbg=none
 hi Macro                cterm=none      ctermfg=10    ctermbg=none
 hi PreCondit            cterm=none      ctermfg=10    ctermbg=none
 

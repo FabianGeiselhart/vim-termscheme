@@ -42,22 +42,22 @@ hi DiffText             cterm=underline ctermfg=none  ctermbg=14
 hi Comment              cterm=none      ctermfg=7     ctermbg=none
 hi Conceal              cterm=none      ctermfg=7     ctermbg=none
 
-hi Constant             cterm=none      ctermfg=13    ctermbg=none
+hi Constant             cterm=none      ctermfg=11    ctermbg=none
 hi String               cterm=none      ctermfg=11    ctermbg=none
 hi Character            cterm=none      ctermfg=11    ctermbg=none
-hi Number               cterm=none      ctermfg=13    ctermbg=none
-hi Boolean              cterm=none      ctermfg=13    ctermbg=none
-hi Float                cterm=none      ctermfg=13    ctermbg=none
+hi Number               cterm=none      ctermfg=11    ctermbg=none
+hi Boolean              cterm=none      ctermfg=11    ctermbg=none
+hi Float                cterm=none      ctermfg=11    ctermbg=none
 
-hi Identifier           cterm=none      ctermfg=10    ctermbg=none
-hi Function             cterm=none      ctermfg=10    ctermbg=none
+hi Identifier           cterm=none      ctermfg=14    ctermbg=none
+hi Function             cterm=none      ctermfg=14    ctermbg=none
 
 hi Statement            cterm=none      ctermfg=12    ctermbg=none
 hi Conditional          cterm=none      ctermfg=12    ctermbg=none
 hi Repeat               cterm=none      ctermfg=12    ctermbg=none
 hi Label                cterm=none      ctermfg=12    ctermbg=none
 hi Operator             cterm=none      ctermfg=12    ctermbg=none
-hi Keyword              cterm=none      ctermfg=9     ctermbg=none
+hi Keyword              cterm=none      ctermfg=12     ctermbg=none
 hi Exception            cterm=none      ctermfg=12    ctermbg=none
 
 hi PreProc              cterm=none      ctermfg=10    ctermbg=none
@@ -67,16 +67,16 @@ hi Macro                cterm=none      ctermfg=10    ctermbg=none
 hi PreCondit            cterm=none      ctermfg=10    ctermbg=none
 
 hi Type                 cterm=none      ctermfg=9     ctermbg=none
-hi StorageClass         cterm=none      ctermfg=12    ctermbg=none
-hi Structure            cterm=none      ctermfg=12    ctermbg=none
-hi Typedef              cterm=none      ctermfg=12    ctermbg=none
+hi StorageClass         cterm=none      ctermfg=9     ctermbg=none
+hi Structure            cterm=none      ctermfg=9     ctermbg=none
+hi Typedef              cterm=none      ctermfg=9     ctermbg=none
 
-hi Special              cterm=none      ctermfg=9     ctermbg=none
-hi SpecialChar          cterm=none      ctermfg=12    ctermbg=none
-hi Tag                  cterm=none      ctermfg=12    ctermbg=none
-hi Delimiter            cterm=none      ctermfg=12    ctermbg=none
-hi SpecialComment       cterm=none      ctermfg=9     ctermbg=none
-hi Debug                cterm=none      ctermfg=9     ctermbg=none
+hi Special              cterm=none      ctermfg=13    ctermbg=none
+hi SpecialChar          cterm=none      ctermfg=13    ctermbg=none
+hi Tag                  cterm=none      ctermfg=13    ctermbg=none
+hi Delimiter            cterm=none      ctermfg=13    ctermbg=none
+hi SpecialComment       cterm=none      ctermfg=13    ctermbg=none
+hi Debug                cterm=none      ctermfg=13    ctermbg=none
 
 hi Underlined           cterm=underline ctermfg=10    ctermbg=none
 hi Ignore               cterm=none      ctermfg=15    ctermbg=none

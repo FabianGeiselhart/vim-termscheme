@@ -67,9 +67,9 @@ hi Macro                cterm=none      ctermfg=10    ctermbg=none
 hi PreCondit            cterm=none      ctermfg=10    ctermbg=none
 
 hi Type                 cterm=none      ctermfg=9     ctermbg=none
-hi StorageClass         cterm=none      ctermfg=9     ctermbg=none
-hi Structure            cterm=none      ctermfg=9     ctermbg=none
-hi Typedef              cterm=none      ctermfg=9     ctermbg=none
+hi StorageClass         cterm=none      ctermfg=12    ctermbg=none
+hi Structure            cterm=none      ctermfg=12    ctermbg=none
+hi Typedef              cterm=none      ctermfg=12    ctermbg=none
 
 hi Special              cterm=none      ctermfg=13    ctermbg=none
 hi SpecialChar          cterm=none      ctermfg=13    ctermbg=none

@@ -28,15 +28,18 @@ hi StatusLine           cterm=Bold      ctermfg=15    ctermbg=none
 hi StatusLineNC         cterm=Bold      ctermfg=8     ctermbg=none
 " hi StatusLineTerm       cterm=none    ctermfg=none      ctermbg=none
 " hi StatusLineTermNC     cterm=none    ctermfg=none      ctermbg=none
+hi TabLine              cterm=Bold    ctermfg=8         ctermbg=none
+hi TabLineFill          cterm=Bold    ctermfg=none      ctermbg=none
+hi TabLineSel           cterm=Bold    ctermfg=15        ctermbg=none
 
 " Text
 hi MatchParen           cterm=none      ctermfg=15    ctermbg=11
 
 " Diff
-hi DiffAdd              cterm=none      ctermfg=none  ctermbg=9
-hi DiffChange           cterm=none      ctermfg=none  ctermbg=14
-hi DiffDelete           cterm=none      ctermfg=none  ctermbg=12
-hi DiffText             cterm=underline ctermfg=none  ctermbg=14
+hi DiffAdd              cterm=none      ctermfg=0     ctermbg=12
+hi DiffChange           cterm=none      ctermfg=0     ctermbg=14
+hi DiffDelete           cterm=none      ctermfg=0     ctermbg=9
+hi DiffText             cterm=underline ctermfg=0     ctermbg=14
 
 " Coding
 hi Comment              cterm=none      ctermfg=7     ctermbg=none
@@ -80,7 +83,7 @@ hi Debug                cterm=none      ctermfg=13    ctermbg=none
 
 hi Underlined           cterm=underline ctermfg=10    ctermbg=none
 hi Ignore               cterm=none      ctermfg=15    ctermbg=none
-hi Error                cterm=none      ctermfg=none  ctermbg=12
+hi Error                cterm=none      ctermfg=0     ctermbg=9
 hi Todo                 cterm=bold      ctermfg=15    ctermbg=none
 
 " Whatever
@@ -100,9 +103,6 @@ hi Todo                 cterm=bold      ctermfg=15    ctermbg=none
 " hi SpellCap             cterm=none    ctermfg=none      ctermbg=none
 " hi SpellLoca            cterm=none    ctermfg=none      ctermbg=none
 " hi SpellRar             cterm=none    ctermfg=none      ctermbg=none
-" hi TabLine              cterm=none    ctermfg=none      ctermbg=none
-" hi TabLineFill          cterm=none    ctermfg=none      ctermbg=none
-" hi TabLineSel           cterm=none    ctermfg=none      ctermbg=none
 " hi Terminal             cterm=none    ctermfg=none      ctermbg=none
 " hi Title                cterm=none    ctermfg=none      ctermbg=none
 " hi VisualNOS            cterm=none    ctermfg=none      ctermbg=none

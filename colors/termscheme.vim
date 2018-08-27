@@ -17,15 +17,15 @@ hi PmenuSel             cterm=none      ctermfg=14    ctermbg=0
 " Ui
 hi Cursor               cterm=none      ctermfg=0     ctermbg=15
 hi CursorIM             cterm=none      ctermfg=0     ctermbg=15
-hi ColorColumn          cterm=none      ctermfg=none  ctermbg=8
+hi ColorColumn          cterm=none      ctermfg=none  ctermbg=12
 hi CursorLine           cterm=none      ctermfg=none  ctermbg=8
 hi CursorColumn         cterm=none      ctermfg=none  ctermbg=8
 hi SignColumn           cterm=none      ctermfg=none  ctermbg=none
 hi LineNr               cterm=Bold      ctermfg=7     ctermbg=none
 hi CursorLineNr         cterm=Bold      ctermfg=14    ctermbg=none
 hi VertSplit            cterm=none      ctermfg=15    ctermbg=none
-" hi StatusLine           cterm=none    ctermfg=none      ctermbg=none
-" hi StatusLineNC         cterm=none    ctermfg=none      ctermbg=none
+hi StatusLine           cterm=Bold      ctermfg=15    ctermbg=none
+hi StatusLineNC         cterm=Bold      ctermfg=8     ctermbg=none
 " hi StatusLineTerm       cterm=none    ctermfg=none      ctermbg=none
 " hi StatusLineTermNC     cterm=none    ctermfg=none      ctermbg=none
 
